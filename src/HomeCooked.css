@@ -1,0 +1,29 @@
+.homecooked-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .homecooked-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .homecooked-description {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .homecooked-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+  }
+s  
+  .homecooked-button:hover {
+    background-color: #ff4500;
+  }
+  

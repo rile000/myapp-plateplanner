@@ -2,11 +2,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 .banner {
-  height: 150px;
+  height: 200px;
   background-color: lightblue;
   display: flex;
   align-items: center;
@@ -14,23 +14,28 @@ body {
 }
 
 .banner img {
-  height: 100px;
+  height: 150px;
 }
 
 .button-container {
-  margin-top: 50px;
+  margin-top: 150px;
   display: flex;
   justify-content: center;
 }
 
 .button {
-  margin: 0 10px;
-  padding: 10px 20px;
+  margin-right: 20px; /* Add margin to the right of "Takeaways" button */
+  padding: 15px 30px; /* Increase padding to make button larger */
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 24px; /* Increase font-size to make text larger */
   font-weight: bold;
   color: white;
-  background-color: lightblue;
+  background-color: blue;
   cursor: pointer;
 }
+
+.button:hover {
+  background-color: #89a8c7; /* Lighter shade of blue when hovered over */
+}
+
