@@ -12,15 +12,17 @@ function App() {
         <div className="banner">
           <img src={logo} alt="Logo" />
         </div>
-        <div className="button-container">
-          <button className="button"><Link to="/takeaways">Takeaways</Link></button>
-          <button className="button" onClick={() => {window.location.href='/homecooked'}}>Home Cooked</button>
-        </div>
+        <Routes>
+          <Route path="/" element={
+            <div className="button-container">
+              <button className="button"><Link to="/takeaways">Takeaways</Link></button>
+              <button className="button" onClick={() => {window.location.href='/homecooked'}}>Home Cooked</button>
+            </div>
+          } />
+          <Route path="/homecooked" element={<HomeCooked />} />
+          <Route path="/takeaways" element={<Takeaway />} />
+        </Routes>
       </div>
-      <Routes>
-        <Route path="/homecooked" element={<HomeCooked />} />
-        <Route path="/takeaways" element={<Takeaway />} />
-      </Routes>
     </Router>
   );
 }

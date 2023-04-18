@@ -1,29 +1,20 @@
 .homecooked-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  .homecooked-title {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-  }
-  
-  .homecooked-description {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+    padding: 20px;
   }
   
   .homecooked-button {
     position: absolute;
     top: 0;
     left: 0;
-    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
   }
-s  
-  .homecooked-button:hover {
-    background-color: #ff4500;
+  
+  
+  .return-button:hover {
+    color: #fff;
+    background-color: #000;
   }
   
