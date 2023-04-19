@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={
             <div className="button-container">
-              <button className="button"><Link to="/takeaways">Takeaways</Link></button>
+              <button className="button" onClick={() => {window.location.href='/takeaways'}}>Takeaways</button>
               <button className="button" onClick={() => {window.location.href='/homecooked'}}>Home Cooked</button>
             </div>
           } />
