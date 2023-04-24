@@ -54,8 +54,8 @@ function Takeaway() {
   ]);
 // useeffect hook, updates takeaway list and suggestion list on search
   useEffect(() => {
-    if (searchText !== '') {
-      const regex = new RegExp(`^${searchText}`, 'i');
+    if (searchText !== '') {//check if empty 
+      const regex = new RegExp(`^${searchText}`, 'i');//match string with whats typed
       // filter array to match search text, set array as suggestion
       setSuggestions(foodTypes.filter(foodType => regex.test(foodType)));
       // filter takeaways array to match search and keywords, set array as takeaway
@@ -70,20 +70,20 @@ function Takeaway() {
     }
   }, [searchText]);
 
-//useeffect hook to update sugggestion list on search input
+//useeffect hook to update suggestion list on search input
   useEffect(() => {
-    if (searchText !== '') {
-      const regex = new RegExp(`^${searchText}`, 'i');
-      setSuggestions(foodTypes.filter(foodType => regex.test(foodType)));
+    if (searchText !== '') { //run when empty
+      const regex = new RegExp(`^${searchText}`, 'i'); 
+      setSuggestions(foodTypes.filter(foodType => regex.test(foodType))); 
     } else {
       setSuggestions([]);
     }
-  }, [searchText]);
+  }, [searchText]);//when searchtext changes trigger
 //search input change
-  const handleSearchChange = e => {
-    const keyword = e.target.value.toLowerCase();
-    setSearchText(keyword);
-    if (keyword !== '') {
+  const handleSearchChange = e => { 
+    const keyword = e.target.value.toLowerCase();//new varaible is whats searched
+    setSearchText(keyword); //update search text state with keyword
+    if (keyword !== '') { //check if empty
       setTakeaways(
         takeaways.filter(takeaway =>
           takeaway.keywords.some(
@@ -136,7 +136,7 @@ function Takeaway() {
       ]);
     }
   };
-  // handle suggestion click
+  
   const handleSuggestionClick = suggestion => {
     setSearchText(suggestion);
     setSuggestions([]);
