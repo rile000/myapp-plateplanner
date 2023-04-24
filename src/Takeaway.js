@@ -5,11 +5,11 @@ import SearchIcon from '@mui/icons-material/Search';
 import './Takeaway.css';
 
 function Takeaway() {
-  const [searchText, setSearchText] = useState('');
-  const [suggestions, setSuggestions] = useState([]);
-
+  const [searchText, setSearchText] = useState('');  // statevariable to track search input
+  const [suggestions, setSuggestions] = useState([]); // state variable to track suggested 
+// food type array
   const foodTypes = ['pizza', 'burger', 'sushi', 'tacos', 'curry'];
-
+// takeaway array
   const [takeaways, setTakeaways] = useState([
     {
       id: 1,
@@ -52,21 +52,25 @@ function Takeaway() {
       keywords: ['vegatarian', 'salad'],
     },
   ]);
-
+// useeffect hook, updates takeaway list and suggestion list on search
   useEffect(() => {
     if (searchText !== '') {
       const regex = new RegExp(`^${searchText}`, 'i');
+      // filter array to match search text, set array as suggestion
       setSuggestions(foodTypes.filter(foodType => regex.test(foodType)));
+      // filter takeaways array to match search and keywords, set array as takeaway
       setTakeaways(takeaways.filter(takeaway => {
         const keywords = takeaway.keywords || []; // handle case where keywords are not defined
         return regex.test(takeaway.name) || keywords.some(keyword => regex.test(keyword));
       }));
     } else {
+      // reset suggestions and takeaways to original on search bar empty
       setSuggestions([]);
       setTakeaways(takeaways); // reset the takeaways state to its initial value when the search text is empty
     }
   }, [searchText]);
 
+//useeffect hook to update sugggestion list on search input
   useEffect(() => {
     if (searchText !== '') {
       const regex = new RegExp(`^${searchText}`, 'i');
@@ -75,7 +79,7 @@ function Takeaway() {
       setSuggestions([]);
     }
   }, [searchText]);
-
+//search input change
   const handleSearchChange = e => {
     const keyword = e.target.value.toLowerCase();
     setSearchText(keyword);
@@ -132,7 +136,7 @@ function Takeaway() {
       ]);
     }
   };
-  
+  // handle suggestion click
   const handleSuggestionClick = suggestion => {
     setSearchText(suggestion);
     setSuggestions([]);
