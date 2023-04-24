@@ -16,7 +16,7 @@ function Takeaway() {
       name: 'McDonalds',
       description: 'American fast food',
       deliveryFee: '£3.99',
-      image: 'placeholder',
+      image: 'https://placehold.jp/150x150.png',
       keywords: ['burger', 'fries', 'fast food'],
     },
     {
@@ -24,7 +24,7 @@ function Takeaway() {
       name: 'Pizza Hut',
       description: 'Pizza, wings, sides',
       deliveryFee: '£4.99',
-      image: 'placeholder',
+      image: 'https://placehold.jp/150x150.png',
       keywords: ['pizza', 'wings', 'sides'],
     },
     {
@@ -32,7 +32,7 @@ function Takeaway() {
       name: 'Subway',
       description: 'Sandwiches',
       deliveryFee: '£2.99',
-      image: 'placeholder',
+      image: 'https://placehold.jp/150x150.png',
       keywords: ['sub', 'sandwich', 'bread'],
     },
     {
@@ -40,7 +40,7 @@ function Takeaway() {
       name: 'KFC',
       description: 'Fried chicken',
       deliveryFee: '£5.99',
-      image: 'placeholder',
+      image: 'https://placehold.jp/150x150.png',
       keywords: ['fried chicken', 'chicken'],
     },
     {
@@ -48,7 +48,7 @@ function Takeaway() {
       name: 'TEST',
       description: 'Veg',
       deliveryFee: '£5.99',
-      image: 'placeholder',
+      image: 'https://placehold.jp/150x150.png',
       keywords: ['vegatarian', 'salad'],
     },
   ]);
@@ -94,7 +94,7 @@ function Takeaway() {
           name: 'McDonalds',
           description: 'American fast food',
           deliveryFee: '£3.99',
-          image: 'https://via.placeholder.com/150',
+          image: 'https://placehold.jp/150x150.png',
           keywords: ['burger', 'fries', 'fast food'],
         },
         {
@@ -102,7 +102,7 @@ function Takeaway() {
           name: 'Pizza Hut',
           description: 'Pizza, wings, sides',
           deliveryFee: '£4.99',
-          image: 'https://via.placeholder.com/150',
+          image: 'https://placehold.jp/150x150.png',
           keywords: ['pizza', 'wings', 'sides'],
         },
         {
@@ -110,7 +110,7 @@ function Takeaway() {
           name: 'Subway',
           description: 'Sandwiches',
           deliveryFee: '£2.99',
-          image: 'https://via.placeholder.com/150',
+          image: 'https://placehold.jp/150x150.png',
           keywords: ['sub', 'sandwich', 'bread'],
         },
         {
@@ -118,7 +118,7 @@ function Takeaway() {
           name: 'KFC',
           description: 'Fried chicken',
           deliveryFee: '£5.99',
-          image: 'https://via.placeholder.com/150',
+          image: 'https://placehold.jp/150x150.png',
           keywords: ['fried chicken', 'chicken'],
         },
         {
@@ -126,7 +126,7 @@ function Takeaway() {
           name: 'TEST',
           description: 'Veg',
           deliveryFee: '£5.99',
-          image: 'https://via.placeholder.com/150',
+          image: 'https://placehold.jp/150x150.png',
           keywords: ['vegatarian', 'salad'],
         },
       ]);
